@@ -30,11 +30,12 @@ namespace SistemaMysql
         private void InitializeComponent()
         {
             this.btnClientes = new System.Windows.Forms.Button();
+            this.btnVendas = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClientes
             // 
-            this.btnClientes.Location = new System.Drawing.Point(141, 64);
+            this.btnClientes.Location = new System.Drawing.Point(142, 63);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(75, 23);
             this.btnClientes.TabIndex = 0;
@@ -42,11 +43,22 @@ namespace SistemaMysql
             this.btnClientes.UseVisualStyleBackColor = true;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
+            // btnVendas
+            // 
+            this.btnVendas.Location = new System.Drawing.Point(142, 92);
+            this.btnVendas.Name = "btnVendas";
+            this.btnVendas.Size = new System.Drawing.Size(75, 23);
+            this.btnVendas.TabIndex = 1;
+            this.btnVendas.Text = "Vendas";
+            this.btnVendas.UseVisualStyleBackColor = true;
+            this.btnVendas.Click += new System.EventHandler(this.btnVendas_Click);
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(369, 194);
+            this.Controls.Add(this.btnVendas);
             this.Controls.Add(this.btnClientes);
             this.Name = "TelaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -58,6 +70,7 @@ namespace SistemaMysql
         #endregion
 
         private System.Windows.Forms.Button btnClientes;
+        private System.Windows.Forms.Button btnVendas;
     }
 }
 

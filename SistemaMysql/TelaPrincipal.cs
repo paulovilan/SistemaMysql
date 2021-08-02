@@ -23,5 +23,11 @@ namespace SistemaMysql
             frmClientes form = new frmClientes();
             form.Show();
         }
+
+        private void btnVendas_Click(object sender, EventArgs e)
+        {
+            frmVendas form = new frmVendas();
+            form.Show();
+        }
     }
 }

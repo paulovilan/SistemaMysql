@@ -70,6 +70,8 @@ namespace SistemaMysql.View
             Clientes dado = new Clientes();
             Salvar(dado);
             Listar();
+            LimparCampos();
+            DesabilitarCampos();
         }
 
         public void Salvar(Clientes dado)
@@ -107,6 +109,8 @@ namespace SistemaMysql.View
             Clientes dado = new Clientes();
             Editar(dado);
             Listar();
+            LimparCampos();
+            DesabilitarCampos();
         }
 
         public void Editar(Clientes dado)
@@ -140,6 +144,8 @@ namespace SistemaMysql.View
             Clientes dado = new Clientes();
             Excluir(dado);
             Listar();
+            LimparCampos();
+            DesabilitarCampos();
         }
 
         public void Excluir(Clientes dado)
